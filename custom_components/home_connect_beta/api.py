@@ -146,6 +146,7 @@ class DeviceWithPrograms(HomeConnectDevice):
             "Remaining Program Time": (None, None, DEVICE_CLASS_TIMESTAMP, 1),
             "Duration": (TIME_SECONDS, "mdi:update", None, 1),
             "Program Progress": (PERCENTAGE, "mdi:progress-clock", None, 1),
+            "Operation State": (None, None, None, 1)
         }
         return [
             {
