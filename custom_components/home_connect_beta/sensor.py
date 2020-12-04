@@ -151,7 +151,7 @@ class HomeConnectSensor(HomeConnectEntity):
                     ).isoformat()
             else:
                 self._state = status[self._key].get("value")
-        _LOGGER.debug("Updated, new state: %s", self._state)
+        _LOGGER.debug("[DB] %s:%s updated, new state: %s", self.device.appliance.name, self._key, self._state)
 
     @property
     def unit_of_measurement(self):
